@@ -63,7 +63,7 @@ const Footer = () => {
                 <FaTelegram size={40} />
               </a>
               <a 
-              href="https://www.notion.so/SynthOS-Automate-Your-Gains-19618bd263f08027993cfa6c5618941d" 
+              href="https://synthos.gitbook.io/documentation" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-yellow-400 transition-colors"

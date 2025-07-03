@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SynthOS",
-  description: "Invest with confidence using personalized crypto yield plans.",
+  description: "AI-powered personalized crypto yield plans",
   icons: {
     icon: [
       {

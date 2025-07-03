@@ -12,10 +12,8 @@ const HeroSection = () => {
        </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto text-center mt-40 md:mt-0">
-          <p className="font-montserrat text-xl md:text-2xl text-white mb-8 mt-14">
-            Invest with confidence  
-          </p>
-          <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] xl:text-[5rem] text-center font-bold mb-6 bg-clip-text text-white uppercase" style={{fontFamily: 'Montserrat-LightItalic'}}><span className="text-white" style={{ textShadow: '0 0 10px white, 0 0 40px yellow, 0 0 30px orange' }}>Personalized </span>crypto yield plans</h1>
+          <h1 className="text-[2.3rem] md:text-[4rem] lg:text-[5rem] xl:text-[5rem] text-center font-bold mb-6 bg-clip-text text-white uppercase" style={{fontFamily: 'Montserrat-LightItalic'}}><span className="text-white" style={{ textShadow: '0 0 10px white, 0 0 40px yellow, 0 0 30px orange' }}>AI-powered  </span></h1>
+          <h2 className="text-[2rem] md:text-[3.5rem] lg:text-[4.5rem] xl:text-[4.5rem] text-center font-bold mb-6 bg-clip-text text-white uppercase">Personalized crypto yield plans</h2>
           {/* Launch App Button - Visible only on mobile */}
           <div className="mt-8 md:hidden">
             <Link href="https://app.synthos.fun" target="_blank" rel="noopener noreferrer">

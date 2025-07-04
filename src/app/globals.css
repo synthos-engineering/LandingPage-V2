@@ -1,5 +1,6 @@
-@import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Import Montserrat fonts */
 @font-face {
@@ -48,13 +49,6 @@
   --foreground: #030213;
   --border: rgba(139, 92, 246, 0.3);
   --ring: rgba(124, 58, 237, 0.5);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {

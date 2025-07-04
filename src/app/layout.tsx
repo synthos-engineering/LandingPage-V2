@@ -17,21 +17,44 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "SynthOS",
-  description: "AI-powered personalized crypto yield plans",
-  icons: {
-    icon: [
+  description:
+    "SynthOS lets you invest in AI-powered personalized crypto yield plans",
+  icons: [
+    {
+      rel: "icon",
+      url: "/favicon.ico",
+    },
+  ],
+  openGraph: {
+    title: "SynthOS",
+    description:
+      "SynthOS lets you invest in AI-powered personalized crypto yield plans",
+    type: "website",
+    url: "https://synthos.fun/",
+    siteName: "SynthOS",
+    locale: "en_US",
+    images: [
       {
-        url: '/favicon.ico',
-        sizes: 'any',
-      },
-      {
-        url: '/favicon.png',
-        type: 'image/png',
-        sizes: '32x32',
+        url: "https://synthos.fun/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SynthOS - AI-powered personalized crypto yield plans",
+        type: "image/jpeg",
       },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/favicon.png',
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SynthOS",
+    description:
+      "SynthOS lets you invest in AI-powered personalized crypto yield plans",
+    images: [
+      {
+        url: "https://synthos.fun/og.jpg",
+        alt: "SynthOS - AI-powered personalized crypto yield plans",
+      },
+    ],
+    creator: "@synthos",
   },
 };
 
@@ -43,19 +66,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="preload" href="/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/Montserrat-LightItalic.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/TT-Travels-Next-Trial-Medium.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/TT-Travels-Next-Trial-DemiBold.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/fonts/Montserrat-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Montserrat-SemiBold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Montserrat-LightItalic.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/TT-Travels-Next-Trial-Medium.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/TT-Travels-Next-Trial-DemiBold.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </head>
-      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased font-montserrat relative`}>
+      <body
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-montserrat relative`}
+      >
         <Header />
-        <main className="">
-          {children}
-        </main>
+        <main className="">{children}</main>
         <Navbar />
         <Footer />
       </body>

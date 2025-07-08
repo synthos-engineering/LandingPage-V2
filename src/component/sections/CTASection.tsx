@@ -28,9 +28,15 @@ const CTASection = () => {
               className="object-contain w-[220px] md:w-[280px]"
             />
           </div>
-          <h2 className="text-2xl md:text-[4rem] lg:text-[5.5rem] font-light mb-4 uppercase">
-             <span className="text-white-800 " style={{ textShadow: '0 0 1px blue, 0 0 20px yellow, 0 0 10px orange' }}>personalized {" "}</span>crypto yield plans
+          <h2 className="text-2xl md:text-[4rem] lg:text-[5.5rem] font-light mb-4 uppercase leading-tight tracking-tight">
+            <span className="text-white" style={{ textShadow: '0 0 1px blue, 0 0 20px yellow, 0 0 10px orange' }}>
+              personalized
+            </span>{" "}
+            <span className="text-white">
+              crypto yield plans
+            </span>
           </h2>
+
           <div className="flex justify-center mt-6 md:mt-8">
            
           <Link href="https://app.synthos.fun" target="_blank" rel="noopener noreferrer">
